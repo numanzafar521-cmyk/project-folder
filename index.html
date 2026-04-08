@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text Tool</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="box">
+  <h2>🔗 Text Tool</h2>
+
+  <textarea id="text-input" rows="5" placeholder="Write text with # headings..."></textarea>
+  <button id="generate-btn">Generate QR & Link</button>
+
+  <input id="link" readonly placeholder="Your link will appear here">
+  <button id="copy-btn">Copy Link</button>
+
+  <div class="qr">
+    <img id="qrImg">
+  </div>
+
+  <button id="download-qr">Download QR</button>
+  <button id="print-note">Print / PDF</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
